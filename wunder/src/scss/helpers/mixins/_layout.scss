@@ -1,0 +1,37 @@
+// Target viewports in a range from given breakpoint $smaller
+// to breakpoint $larger.
+@mixin between($smaller, $larger) {
+  @media (min-width: $smaller) and (max-width: #{$larger - 1px}) { @content; }
+}
+
+// Target viewports from 0 to given breakpoint $breakpoint.
+// The inverse behavior of mobile first.
+@mixin below($breakpoint) {
+  @media (max-width: #{$breakpoint - 1px}) { @content; }
+}
+
+// Target viewports from a given breakpoint to infinity.
+@mixin above($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
+}
+
+
+// Layouts.
+
+@mixin container($width: $container-max-width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin container-wide($width: $container-wide-max-width) {
+  @include container($width);
+}
+
+@mixin layout-narrow() {
+  @include above($medium) {
+    @include grid-column(10);
+    @include grid-push(1);
+    float: none;
+  }
+}

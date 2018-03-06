@@ -1,0 +1,6 @@
+# Ignore node packages.
+.npm/node_modules
+.npm/npm-debug.log
+
+# Ignore bower components
+.npm/bower_components

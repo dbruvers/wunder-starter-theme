@@ -1,0 +1,6 @@
+.site-header__region-wrapper {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

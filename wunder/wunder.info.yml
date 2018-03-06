@@ -1,0 +1,20 @@
+name: Wunder
+description: Wunder starter theme
+type: theme
+package: Wunder
+screenshot: screenshot.png
+base theme: classy
+core: 8.x
+
+regions:
+  header_first: Header First
+  header_second: Header Second
+  pre_content: Pre Content
+  content: Content
+  post_content: Post Content
+  footer_first: Footer First
+  footer_second: Footer Second
+
+libraries:
+  - wunder/styles-and-scripts
+

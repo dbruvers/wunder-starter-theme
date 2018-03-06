@@ -1,0 +1,24 @@
+wunder.small:
+  label: small
+  mediaQuery: '(max-width: 480px)'
+  weight: 1
+  multipliers:
+    - 1x
+wunder.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 481px) and (max-width: 960px)'
+  weight: 1
+  multipliers:
+    - 1x
+wunder.large:
+  label: large
+  mediaQuery: 'all and (min-width: 961px) and (max-width: 1200px)'
+  weight: 1
+  multipliers:
+    - 1x
+wunder.xlarge:
+  label: xlarge
+  mediaQuery: 'all and (min-width: 1201px)'
+  weight: 1
+  multipliers:
+    - 1x

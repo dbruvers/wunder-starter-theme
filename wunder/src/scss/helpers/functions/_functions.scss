@@ -1,0 +1,12 @@
+//------------------------------------------------------------------
+// [Functions]
+//------------------------------------------------------------------
+
+// map-get
+@function mg($map, $key) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @warn "Key: `#{$key}` is not available in the list.";
+  }
+}

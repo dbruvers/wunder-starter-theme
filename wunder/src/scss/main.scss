@@ -1,0 +1,25 @@
+//------------------------------------------------------------------
+// [Master stylesheet]
+//
+// Categorizing:
+//
+// 1. Base  - Defaults elements, attribute selectors, pseudo-class selectors styling [example: body, form, a]
+// 2. Layout  - Divide the page into sections [example: header, footer]
+// 3. Components - Reusable, Modular parts of design [example: sidebar, popup]
+//-------------------------------------------------------------------
+@charset "UTF-8";
+
+// Neat, helpers and variables
+@import "neat";
+@import "helpers/variables/*";
+@import "helpers/**";
+
+// Base
+@import "normalize";
+@import "base/*";
+
+// Components
+@import "components/**";
+
+// Layout
+@import "layout/**";

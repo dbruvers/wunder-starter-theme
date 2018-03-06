@@ -1,0 +1,21 @@
+default:
+  label: Default
+  category: 'Wunder'
+  path: layouts/default
+  icon: default.png
+  template: default
+  regions:
+    first:
+      label: First region
+    second:
+      label: Second region
+    third:
+      label: Third region
+    fourth:
+      label: Fourth region
+    fifth:
+      label: Fifth region
+    sixth:
+      label: Sixth region
+    seventh:
+      label: Seventh region

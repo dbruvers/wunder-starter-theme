@@ -1,0 +1,119 @@
+fieldset {
+  background-color: $color-gray-200;
+  border: $base-border;
+  margin: 0 0 $spacing-small;
+  padding: $base-spacing;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $spacing-small / 2;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $spacing-small / 2;
+}
+
+input,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+input,
+select[multiple] {
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: $spacing-small;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $spacing-small / 2;
+}
+
+[type="file"] {
+  margin-bottom: $spacing-small;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+[type="submit"],
+button {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  padding: $spacing-small $base-spacing;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  appearance: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 0;
+  color: black;
+  background-color: $action-color;
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}

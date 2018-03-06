@@ -1,0 +1,15 @@
+{
+  "name": "Wunder",
+  "version": "1.0.0",
+  "description": "Wunder theme.",
+  "private": true,
+  "devDependencies": {},
+  "install": {
+    "path": {
+      "css": "../vendor/css",
+      "js": "../vendor/js"
+    },
+    "ignore": []
+  },
+  "dependencies": {}
+}

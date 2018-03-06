@@ -1,0 +1,7 @@
+.region {
+  padding: 0 $spacing-small;
+
+  @include above($medium) {
+    padding: 0 $base-spacing;
+  }
+}

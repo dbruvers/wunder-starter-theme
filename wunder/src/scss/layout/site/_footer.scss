@@ -1,0 +1,9 @@
+.site-footer__region-wrapper {
+  @include container;
+
+  @include above($medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,24 @@
+@mixin _icon {
+  display: inline-block;
+  font: normal normal normal #{$base-font-size}/1 font-awesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin icon($icon, $placement: before) {
+  @if $placement == before {
+    &::before {
+      @include _icon;
+      content: $icon;
+    }
+  }
+  @else {
+    &::after {
+      @include _icon;
+      content: $icon;
+    }
+  }
+}

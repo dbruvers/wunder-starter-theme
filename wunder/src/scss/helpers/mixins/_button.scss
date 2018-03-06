@@ -1,0 +1,40 @@
+@mixin button {
+  display: inline-block;
+  padding: $spacing-tiny $spacing-large;
+  font-weight: bold;
+  text-transform: none;
+  text-decoration: none;
+  background: $color-green-2;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background: $color-green-1;
+  }
+
+  @include below($xsmall) {
+    padding: $spacing-tiny $spacing-small;
+  }
+}
+
+@mixin button--primary {
+  @include icon($fa-var-chevron-right, after);
+  display: inline-block;
+  padding: $spacing-tiny $spacing-small;
+  font-weight: bold;
+  font-family: $font-family-headings;
+  text-transform: none;
+  text-decoration: none;
+  border: 1px solid $base-color;
+  background: transparent;
+  color: $base-color;
+
+  &:hover,
+  &:focus {
+    color: $color-gray-700;
+  }
+
+  &::after {
+    margin-left: $base-spacing;
+  }
+}

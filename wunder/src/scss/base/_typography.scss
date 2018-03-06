@@ -1,0 +1,101 @@
+html {
+  font-size: 8px;
+
+  @include above($small) {
+    font-size: 9px;
+  }
+
+  @include above($medium) {
+    font-size: 10px;
+  }
+}
+
+body {
+  color: $base-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $base-line-height;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $heading-line-height;
+  margin: 0 0 $spacing-small;
+}
+
+// Header font sizes
+h1 {
+  font-size: $font-size-h2;
+  font-weight: bold;
+  color: black;
+
+  @include above($medium) {
+    font-size: $font-size-h1;
+  }
+}
+
+h2 {
+  font-size: $font-size-h3;
+  margin: $spacing-medium 0 $base-spacing;
+
+  @include above($medium) {
+    font-size: $font-size-h2;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: $spacing-medium 0 $base-spacing;
+
+  @include above($medium) {
+    font-size: $font-size-h3;
+  }
+}
+
+h4 {
+  font-size: $font-size-h4;
+  margin: $base-spacing 0 $spacing-small;
+}
+
+h5,
+h6 {
+  font-size: $base-font-size;
+}
+
+p {
+  margin: 0 0 $spacing-small;
+}
+
+a {
+  color: $action-color;
+  text-decoration: underline;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+em {
+  font-style: normal;
+  background: rgba($color-gray-200, .75);
+}
